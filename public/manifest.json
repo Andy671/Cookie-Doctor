@@ -1,0 +1,16 @@
+{
+  "manifest_version": 10,
+  "name": "Cookie Doctor",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Cookie Doctor",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "management",
+    "tabs",
+    "https://cookie-doctor.herokuapp.com",
+    "storage"
+  ]
+}
