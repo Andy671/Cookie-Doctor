@@ -6,9 +6,9 @@ function Extension(props) {
   let riskText = ''
   let shouldRemove = true
   let color = 'red'
-  if (props.risk >= 300) {
+  if (props.risk >= 67) {
     riskText = '(Високий)'
-  } else if (props.risk >= 100) {
+  } else if (props.risk >= 34) {
     riskText = '(Середній)'
     color = 'orange'
   } else {
@@ -16,7 +16,7 @@ function Extension(props) {
     color = 'green'
     shouldRemove = false
   }
-  const progress = (props.risk / 5)
+  const progress = (props.risk)
 
   const deleteClasses = ['delete-button', color].join(' ')
   return (
